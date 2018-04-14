@@ -6,14 +6,18 @@
 // };
 
 // test(1);
-
+import 'font-awesome/css/font-awesome.min.css';
 import React from 'react';
 import ReactDom from 'react-dom';
+
 
 import './index.css';
 import './index.scss';
 
 ReactDom.render(
-        <h1>hello react webpack </h1>,
+<div>
+        <i className="fa fa-address-book"></i>
+        <h1>hello react webpack2 </h1>,
+</div>,
         document.getElementById('app')
     );
