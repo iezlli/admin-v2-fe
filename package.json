@@ -5,9 +5,9 @@
   "repository": "git@github.com:iezlli/admin-v2-fe.git",
   "author": "lizhuliang <2922520570@qq.com>",
   "license": "MIT",
-  "scripts":{
-    "dev":"node_modules/.bin/webpack-dev-server",
-    "dist":"node_modules/.bin/webpack -p"
+  "scripts": {
+    "dev": "node_modules/.bin/webpack-dev-server",
+    "dist": "node_modules/.bin/webpack -p"
   },
   "devDependencies": {
     "babel-core": "6.26.0",
@@ -25,9 +25,9 @@
   },
   "dependencies": {
     "file-loader": "1.1.6",
-    "font-awesome": "^4.7.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
+    "react-router-dom": "4.2.2",
     "url-loader": "0.6.2"
   }
 }

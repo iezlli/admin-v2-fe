@@ -1,23 +1,27 @@
-// // console.log(123)
-
-// let a=12;
-// let test=(value)=>{
-//     return value*2;
-// };
-
-// test(1);
-import 'font-awesome/css/font-awesome.min.css';
 import React from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
+import {BrowserRouter as Router,Route,Link,Switch,Redirect} from 'react-router-dom';
 
+//Home页面
+import Home from 'page/home/index.jsx';
+//布局
+import Layout from 'component/layout/index.jsx';
+class App extends React.Component{
+    render(){
+        return(
+        <Router>
+            <Layout>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Redirect from="*" to="/"/>
+                </Switch>
+            </Layout>
+        </Router>
+        );
+    }
+}
 
-import './index.css';
-import './index.scss';
-
-ReactDom.render(
-<div>
-        <i className="fa fa-address-book"></i>
-        <h1>hello react webpack2 </h1>,
-</div>,
-        document.getElementById('app')
-    );
+ReactDOM.render(
+    <App/>,
+    document.getElementById('app')
+);
